@@ -2,6 +2,7 @@ import numpy as np
 from collections import defaultdict
 import logging
 
+logging.basicConfig(level=logging.INFO)
 
 def high_threshold(multiset, p):
     try:

@@ -10,6 +10,7 @@ import hle_connection.correlation_by_overlap as corr_overlap
 import hl_paths.case_participation as case_participation
 import hl_paths.high_level_paths as paths
 
+logging.basicConfig(level=logging.INFO)
 
 DEFAULT_HLF = frozenset(['exit', 'enter', 'handover', 'workload', 'batch', 'delay'])
 

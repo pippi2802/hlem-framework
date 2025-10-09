@@ -10,6 +10,8 @@ import hl_log.hl_log as hl_log
 from datetime import timezone
 import logging
 
+logging.basicConfig(level=logging.INFO)
+
 DEFAULT_HLF = frozenset(['exit', 'enter', 'wt', 'cross', 'busy', 'do', 'todo', 'exec', 'to-exec', 'handover', 'workload'])
 
 
