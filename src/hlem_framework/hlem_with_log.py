@@ -10,11 +10,17 @@ import hl_log.hl_log as hl_log
 from datetime import timezone
 import logging
 
+logging.basicConfig(level=logging.INFO)
+
 DEFAULT_HLF = frozenset(['exit', 'enter', 'wt', 'cross', 'busy', 'do', 'todo', 'exec', 'to-exec', 'handover', 'workload'])
 
 
 def transform_log_to_hl_log_width(log, frame, traffic_type, selected_f_list, p, connection_thresh, res_info, freq,
                                   only_component, type_based, act_selection, res_selection, seg_method, flatten):
+    '''
+    Builds a high-level event log by generating and linking high-level events using linkage strength (based on correlated or similarity of entities), not overlap.
+    Produces a hl-log (an abstract version ofn the original event log)
+    '''
 
     try:
         res_info is False and ('busy' in selected_f_list or 'do' in selected_f_list or 'todo' in selected_f_list or
