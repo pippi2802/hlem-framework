@@ -5,24 +5,43 @@ import sys
 # Add the parent folder (where hlem_with_log.py lives) to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-import hlem_with_log
 import hlem_with_paths
+import logging
+from preprocessing import get_resources
+logging.basicConfig(level=logging.INFO)
 
 
-def main(path, traffic_type='High', hlf_selected=hlem_with_log.DEFAULT_HLF, p=0.9, connection_thresh=0.5, res_info=True,
-         freq=0, only_comp=False, type_based=True, act_selection='all', res_selection='all', seg_method='df',
-         flatten=False):
+TRAFFIC_TYPE = 'High'
+FRAME = 'days'
+SELECTED_F_LIST = ['exit', 'enter', 'handover', 'workload', 'batch', 'delay']
+P = 0.9
+CO_THRESH = 0.5
+CO_PATH_THRESH = 0.5
+RES_INFO = True
+FREQ = 0
+ONLY_MAXIMAL_PATHS = True
+PATH_FREQUENCY = 0
+ACT_SELECTION = 'all'
+TO_EXCLUDE = ['User_1']
+SEG_METHOD = 'df'
+TYPE_BASED = True
+SEG_PERCENTILE = 0.75
+
+def main(log, frame, traffic_type, selected_f_list, p, co_thresh, co_path_thresh, res_info, only_maximal_paths, path_frequency,
+         act_selection, res_selection, seg_method, type_based, seg_percentile):
     """
     :param path: the local path to the log data
 
+    :param frame: the time frame for partitioning the event log into time windows, can be 'days', 'weeks', 'months',
+
     :param traffic_type: can be 'High', 'Low' or ['High', 'Low']
 
-    :param hlf_selected: the list of selected high-level features, can be any non-empty list of elements from
+    :param selected_f_list: the list of selected high-level features, can be any non-empty list of elements from
     ['exec', 'todo', 'wl', 'enter', 'exit', 'progress', 'wt']
 
     :param p: the percentile to determine what is considered high (or low), a number 50 < p < 100
 
-    :param connection_thresh: the lambda value in [0,1], determines whether any two hle are correlated or not
+    :param co_thresh: the lambda value in [0,1], determines whether any two hle are correlated or not (0.5)
 
     :param res_info: must be set to False if the event log has no resource information, otherwise can be set to True
 
@@ -51,24 +70,9 @@ def main(path, traffic_type='High', hlf_selected=hlem_with_log.DEFAULT_HLF, p=0.
     :return: a (high-level) event log
     """
 
-    log = pm4py.read_xes(path)
-    no_events = sum([len(trace) for trace in log])
-    ts_first = log[0][0]['time:timestamp']
-    last_trace = log[len(log)-1]
-    ts_last = log[len(log)-1][len(last_trace)-1]['time:timestamp']
-    #seconds_total = (ts_last-ts_first).total_seconds()
-    #no_windows = 6 * (seconds_total / 3600)  # used in the evaluation of the simulated log
-    no_windows = math.ceil(math.sqrt(no_events))
-    frame = 'days'
-
-    
-    hl_log, df = hlem_with_log.transform_log_to_hl_log_width(log, frame, traffic_type, hlf_selected, p, connection_thresh,
-                                                             res_info, freq, only_comp, type_based, act_selection,
-                                                             res_selection, seg_method, flatten)
-
-    # hl_log = hlem_with_paths.paths_and_cases_with_overlap(log, frame, traffic_type, hlf_selected, p, connection_thresh,
-    #                                                       res_info, only_comp, freq, type_based, act_selection,
-    #                                                       res_selection, seg_method, seg_percentile=0.8)
+    # We use this method: it implements the overlap connection rules that the paper uses to create episodes and hl-paths.
+    hl_log = hlem_with_paths.paths_and_cases_with_overlap(log, frame, traffic_type, selected_f_list, p, co_thresh, co_path_thresh, res_info, only_maximal_paths, path_frequency,
+         act_selection, res_selection, seg_method, type_based, seg_percentile)
 
     return hl_log
 
@@ -76,13 +80,22 @@ def main(path, traffic_type='High', hlf_selected=hlem_with_log.DEFAULT_HLF, p=0.
 if __name__ == '__main__':
     current_dir = os.path.dirname(__file__)
     print("current_dir:", current_dir)
-    # print("Current directory:", os.path.abspath(os.curdir))
-    # os.chdir("..")
-    # os.chdir("..")
-    #print("Other directory:", os.path.abspath(os.curdir))
+    
     current_dir = os.path.abspath(os.curdir)
-    my_path = os.path.join(current_dir, "event_logs/BPI2017.xes")
-    print("my_path:", my_path)
+
+    bpi2017_path = os.path.join(current_dir, "event_logs/BPI2017.xes")
+    print("my_path:", bpi2017_path)
+    
+    log = pm4py.read_xes(bpi2017_path)
+    logging.info('The log has ' + str(len(log)) + ' traces.')
+
+    no_events = sum([len(trace) for trace in log])
+    logging.info('The log has ' + str(no_events) + ' events.')
+
+    # remove User_1 from the log (project log)
+    logging.info("Get all human resouces from log")
+    res_selection = get_resources(log, TO_EXCLUDE)
 
     print("Running main...")
-    main(path=my_path)
+    main(log, FRAME, TRAFFIC_TYPE, SELECTED_F_LIST, P, CO_THRESH, CO_PATH_THRESH, RES_INFO, ONLY_MAXIMAL_PATHS,
+          PATH_FREQUENCY, ACT_SELECTION, res_selection, SEG_METHOD, TYPE_BASED, SEG_PERCENTILE)
