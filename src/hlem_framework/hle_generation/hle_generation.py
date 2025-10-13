@@ -2,6 +2,10 @@ import numpy as np
 from collections import defaultdict
 import logging
 
+<<<<<<< HEAD
+=======
+logging.basicConfig(level=logging.INFO)
+>>>>>>> 84a4b434414e064e0b9d727d1cc25ede6ac72017
 
 def high_threshold(multiset, p):
     try:

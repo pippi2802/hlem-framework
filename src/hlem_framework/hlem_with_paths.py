@@ -10,6 +10,7 @@ import hle_connection.correlation_by_overlap as corr_overlap
 import hl_paths.case_participation as case_participation
 import hl_paths.high_level_paths as paths
 
+logging.basicConfig(level=logging.INFO)
 
 DEFAULT_HLF = frozenset(['exit', 'enter', 'handover', 'workload', 'batch', 'delay'])
 
@@ -18,20 +19,33 @@ def paths_and_cases_with_overlap(input_log, frame='days', traffic_type='High', s
                                  co_thresh=0.5, co_path_thresh=0.5, res_info='True', only_maximal_paths=True,
                                  path_frequency=0, act_selection='all', res_selection='all', seg_method='df',
                                  type_based=True, seg_percentile=0.8):
+    
+    '''
+    Builds high-level event paths by detecting overlaps between high-level events and linking them into connected paths (via event overlaps in time).
+    '''
 
-    logging.info('Computing steps.')
+    logging.info('ENTER - path and cases with overlap method started')
+
     # first: create event dictionary, event_pairs, trig and release dicts, components, and link values
     event_dict = preprocess.event_dict(input_log, res_info)
+
     steps, trigger, release = preprocess.trig_rel_dicts(input_log, seg_method)
+
     set_A, set_R, set_S = component.components(event_dict, steps, res_info)
+
     if seg_percentile > 0:
+        logging.info(f"seg_percentile is {seg_percentile}")
         set_S = preprocess.get_most_freq_segments(input_log, seg_percentile)
     print('There are ', len(set_S), 'segments.')
+
+
     component_types_dic = component.comp_type_dict(set_A, set_R, set_S)
 
     logging.info('Computing windows, partitioning events into windows.')
+
     ids_sorted = frames.sorted_ids_by_ts(event_dict)
     w_events_list, id_window_mapping = frames.framing(event_dict, frame)
+    
     window_borders_dict = frames.windows_borders_dict(event_dict, frame, ids_sorted)
 
     if isinstance(frame, int):
