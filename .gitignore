@@ -2,8 +2,5 @@
 __pycache__
 dist
 venv
-<<<<<<< HEAD
-=======
 src/hlem_framework/bpic2017_analysis/event_logs/BPI2017.xes
->>>>>>> 84a4b434414e064e0b9d727d1cc25ede6ac72017
 **/*.egg-info
