@@ -62,13 +62,13 @@ def main(path, traffic_type='High', hlf_selected=hlem_with_log.DEFAULT_HLF, p=0.
     frame = 'days'
 
     
-    # hl_log, df = hlem_with_log.transform_log_to_hl_log_width(log, frame, traffic_type, hlf_selected, p, connection_thresh,
-    #                                                          res_info, freq, only_comp, type_based, act_selection,
-    #                                                          res_selection, seg_method, flatten)
+    hl_log, df = hlem_with_log.transform_log_to_hl_log_width(log, frame, traffic_type, hlf_selected, p, connection_thresh,
+                                                             res_info, freq, only_comp, type_based, act_selection,
+                                                             res_selection, seg_method, flatten)
 
-    hl_log = hlem_with_paths.paths_and_cases_with_overlap(log, frame, traffic_type, hlf_selected, p, connection_thresh,
-                                                          res_info, only_comp, freq, type_based, act_selection,
-                                                          res_selection, seg_method, seg_percentile=0.8)
+    # hl_log = hlem_with_paths.paths_and_cases_with_overlap(log, frame, traffic_type, hlf_selected, p, connection_thresh,
+    #                                                       res_info, only_comp, freq, type_based, act_selection,
+    #                                                       res_selection, seg_method, seg_percentile=0.8)
 
     return hl_log
 

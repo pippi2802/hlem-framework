@@ -19,6 +19,10 @@ def paths_and_cases_with_overlap(input_log, frame='days', traffic_type='High', s
                                  co_thresh=0.5, co_path_thresh=0.5, res_info='True', only_maximal_paths=True,
                                  path_frequency=0, act_selection='all', res_selection='all', seg_method='df',
                                  type_based=True, seg_percentile=0.8):
+    
+    '''
+    Builds high-level event paths by detecting overlaps between high-level events and linking them into connected paths (via event overlaps in time).
+    '''
 
     logging.info('Computing steps.')
     # first: create event dictionary, event_pairs, trig and release dicts, components, and link values
