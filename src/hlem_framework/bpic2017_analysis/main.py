@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import hlem_with_paths
 import logging
-from preprocessing import get_resources
+from preprocessing import get_resources, filter_complete_traces
 logging.basicConfig(level=logging.INFO)
 
 
@@ -18,14 +18,15 @@ P = 0.9
 CO_THRESH = 0.5
 CO_PATH_THRESH = 0.5
 RES_INFO = True
-FREQ = 0
+FREQ = 10 # initially this was 0
 ONLY_MAXIMAL_PATHS = True
-PATH_FREQUENCY = 0
+PATH_FREQUENCY = 10 # initially this was 0
 ACT_SELECTION = 'all'
 TO_EXCLUDE = ['User_1']
 SEG_METHOD = 'df'
 TYPE_BASED = True
 SEG_PERCENTILE = 0.75
+END_TRACE_EVENTS = ['A_Cancelled', 'A_Pending', 'A_Denied']
 
 def main(log, frame, traffic_type, selected_f_list, p, co_thresh, co_path_thresh, res_info, only_maximal_paths, path_frequency,
          act_selection, res_selection, seg_method, type_based, seg_percentile):
@@ -86,14 +87,21 @@ if __name__ == '__main__':
     bpi2017_path = os.path.join(current_dir, "event_logs/BPI2017.xes")
     print("my_path:", bpi2017_path)
     
+    #log = pm4py.read_xes(bpi2017_path, return_legacy_log_object=True)
+
     log = pm4py.read_xes(bpi2017_path)
+    logging.info("Log type is " + str(type(log)))
     logging.info('The log has ' + str(len(log)) + ' traces.')
 
     no_events = sum([len(trace) for trace in log])
     logging.info('The log has ' + str(no_events) + ' events.')
 
+    # filter event log for copmlete traces only
+    log = filter_complete_traces(log, END_TRACE_EVENTS)
+    logging.info('The filtered log has ' + str(len(log)) + ' traces after filtering incomplete traces.')
+
     # remove User_1 from the log (project log)
-    logging.info("Get all human resouces from log")
+    logging.info(f"Get all human resouces from log with type {str(type(log))}")
     res_selection = get_resources(log, TO_EXCLUDE)
 
     print("Running main...")
