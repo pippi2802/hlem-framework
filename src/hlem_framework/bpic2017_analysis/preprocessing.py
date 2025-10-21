@@ -117,9 +117,9 @@ def partition_on_throughput(log):
         else:
             class_over_30.append(i)
 
-    logging.info(f"Total cases under 10: {class_under_10}")
-    logging.info(f"Total cases between 10 and 30: {class_10_to_30}")
-    logging.info(f"Total cases over 10: {class_over_30}")
+    logging.info(f"Total cases under 10: {len(class_under_10)}")
+    logging.info(f"Total cases between 10 and 30: {len(class_10_to_30)}")
+    logging.info(f"Total cases over 10: {len(class_over_30)}")
     return class_under_10, class_10_to_30, class_over_30
 
 def filter_incomplete_cases(log):

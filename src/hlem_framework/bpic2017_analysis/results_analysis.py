@@ -69,9 +69,6 @@ def results_outcome(df_paths, successful_cases, unsuccessful_cases, output_file=
     results_df = pd.DataFrame(results)
     
     if len(results_df) > 0:
-        # Sort by p-value in descending order
-        #results_df = results_df.sort_values('p_value')
-        
         # Save to CSV
         results_df.to_csv(output_file, index=False)
         logging.info(f"Found {len(results_df)} statistically significant paths (p ≤ 0.05)")

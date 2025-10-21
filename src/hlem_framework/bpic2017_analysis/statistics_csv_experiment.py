@@ -27,7 +27,7 @@ def print_outcome_tables(
     df.columns = df.columns.str.strip()  # clean whitespace
 
     if 'Path' not in df.columns:
-        print("❌ 'Path' column not found in CSV.")
+        print("'Path' column not found in CSV.")
         return
 
     # Ensure the columns we expect are present
@@ -37,7 +37,7 @@ def print_outcome_tables(
     ]
     for col in required_cols:
         if col not in df.columns:
-            print(f"❌ Missing column: {col}")
+            print(f" Missing column: {col}")
             return
 
     # For each query, filter and print matching paths
@@ -62,30 +62,25 @@ def print_outcome_tables(
             total_nonpart = success_nonpart + failure_nonpart
             grand_total = total_part + total_nonpart
 
-            def format_count(count, success, total):
-                rate = success / total if total > 0 else 0
+            def format_count(count, total):
+                rate = count / total if total > 0 else 0
                 return f"{count} ({rate:.2%})"
 
             table = pd.DataFrame({
                 'Participant': [
-                    format_count(success_part, success_part, total_part),
-                    format_count(failure_part, success_part, total_part)
+                    format_count(success_part, total_part),
+                    format_count(failure_part, total_part)
                 ],
                 'Non-Participant': [
-                    format_count(success_nonpart, success_nonpart, total_nonpart),
-                    format_count(failure_nonpart, success_nonpart, total_nonpart)
+                    format_count(success_nonpart,total_nonpart),
+                    format_count(failure_nonpart,total_nonpart)
                 ]
             }, index=['Success', 'Failure'])
 
-            table['Total'] = [
-                format_count(total_success, total_success, grand_total),
-                format_count(total_failure, total_success, grand_total)
-            ]
 
             total_row = pd.DataFrame({
-                'Participant': [format_count(total_part, success_part, total_part)],
-                'Non-Participant': [format_count(total_nonpart, success_nonpart, total_nonpart)],
-                'Total': [format_count(grand_total, total_success, grand_total)]
+                'Participant': [format_count(total_part,total_part)],
+                'Non-Participant': [format_count(total_nonpart, total_nonpart)],
             }, index=['Total'])
 
             table = pd.concat([table, total_row])
