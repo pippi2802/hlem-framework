@@ -11,11 +11,9 @@ import hlem_with_paths
 from hl_paths import postprocess, significance, case_participation
 import logging
 import preprocessing 
+import results_analysis
+import statistics_csv_experiment
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
-
-# Debug: verify module location
-logging.info(f"hlem_with_paths module location: {hlem_with_paths.__file__}")
-
 
 TRAFFIC_TYPE = 'High'
 FRAME = 'days'
@@ -46,77 +44,17 @@ def load_event_log(xes_path):
     if os.path.isfile(cache_path):
         logging.info(f'Loading log from cache: {cache_path}')
         with open(cache_path, 'rb') as f:
-            return pickle.load(f)
+            cache = pickle.load(f)
+            return pm4py.convert_to_event_log(cache)
     else:
         logging.info(f'Reading XES file: {xes_path}')
-        log = pm4py.read_xes(xes_path)
+        log = pm4py.read_xes(xes_path, return_legacy_log_object=True)
         logging.info(f'Creating cache: {cache_path}')
         with open(cache_path, 'wb') as f:
             pickle.dump(log, f)
         return log
 
-def print_hle_statistics(hle_all_dic, save_to_file=True, output_file='hle_statistics.txt'):
-    """
-    Prints and optionally saves a table showing statistics for high-level events by feature type.
-    For each feature type shows total count (%), number of distinct segments, and most frequent segment.
-    
-    :param hle_all_dic: Dictionary of all high-level events
-    :param save_to_file: Whether to save the table to a file
-    :param output_file: Name of the output file (default: 'hle_statistics.txt')
-    """
-    
-    # Group HLEs by feature type
-    feature_stats = {}
-    
-    for hle_id, hle_info in hle_all_dic.items():
-        feature_type = hle_info['f-type']
-        entity = hle_info['entity']
-        
-        if feature_type not in feature_stats:
-            feature_stats[feature_type] = {'count': 0, 'segments': []}
-        
-        feature_stats[feature_type]['count'] += 1
-        feature_stats[feature_type]['segments'].append(entity)
-    
-    # Calculate totals
-    total_hles = sum(stats['count'] for stats in feature_stats.values())
-    
-    # Output lines
-    lines = []
-    lines.append("=" * 120)
-    lines.append("HIGH-LEVEL EVENT STATISTICS")
-    lines.append("=" * 120)
-    lines.append(f"{'Feature Type':<20} {'Hle Count (%)':<20} {'Distinct Segments':<20} {'Most Frequent Segment'}")
-    lines.append("-" * 120)
-    
-    for feature_type in sorted(feature_stats.keys()):
-        stats = feature_stats[feature_type]
-        count = stats['count']
-        percentage = (count / total_hles * 100) if total_hles > 0 else 0
-        
-        # Count distinct segments and find most frequent
-        segment_counter = Counter(stats['segments'])
-        distinct_segments = len(segment_counter)
-        most_common_segment, most_common_count = segment_counter.most_common(1)[0]
-        
-        # Format output
-        count_pct = f"{count} ({percentage:.2f}%)"
-        segment_str = f"{most_common_segment} (n={most_common_count})"
-        
-        lines.append(f"{feature_type:<20} {count_pct:<20} {distinct_segments:<20} {segment_str}")
-    
-    lines.append("-" * 120)
-    lines.append(f"{'TOTAL':<20} {total_hles:<10}")
-    lines.append("=" * 120)
-    
-    # Print to console
-    print("\n" + "\n".join(lines) + "\n")
-    
-    # Save to file if requested
-    if save_to_file:
-        with open(output_file, 'w', encoding='utf-8') as f:
-            f.write("\n".join(lines) + "\n")
-        logging.info(f"Statistics saved to {output_file}")
+
 
 def main(log, frame, traffic_type, selected_f_list, p, co_thresh, co_path_thresh, res_info, only_maximal_paths, path_frequency,
          act_selection, res_selection, seg_method, type_based, seg_percentile):
@@ -174,84 +112,10 @@ def main(log, frame, traffic_type, selected_f_list, p, co_thresh, co_path_thresh
     return hle_all_dic, hla_paths_dict
 
 
-def results_outcome(df_paths, successful_cases, unsuccessful_cases, output_file='outcome_results.csv'):
-    """
-    Tests which high-level paths are statistically correlated with case success or failure.
-    
-    For each path:
-    - Counts participating cases that succeeded vs. failed
-    - Counts non-participating cases that succeeded vs. failed
-    - Runs chi-square test to determine if path significantly affects success rate
-    - Saves only statistically significant paths (p ≤ 0.05) to CSV
-    
-    :param df_paths: DataFrame with path statistics (from gather_statistics)
-    :param successful_cases: List of case IDs that succeeded
-    :param unsuccessful_cases: List of case IDs that failed
-    :param output_file: Name of the output CSV file
-    :return: DataFrame with statistically significant paths
-    """    
-    # Convert to sets for intersection operations
-    successful_set = set(successful_cases)
-    unsuccessful_set = set(unsuccessful_cases)
-
-    outcome_partition = [successful_set, unsuccessful_set]
-    
-    results = []
-    
-    for _, row in df_paths.iterrows():
-        path = row['path']
-        path_freq = row['frequency']
-        participating = row['participating']
-        non_participating = row['non-participating']
-        
-        # Count participating cases by outcome
-        part_success = len(participating.intersection(successful_set))
-        part_unsuccess = len(participating.intersection(unsuccessful_set))
-        
-        # Count non-participating cases by outcome
-        non_part_success = len(non_participating.intersection(successful_set))
-        non_part_unsuccess = len(non_participating.intersection(unsuccessful_set))
-        
-        participation_partition = [participating, non_participating]
-        
-        # Run significant correlation test 
-        p_value, is_significant = significance.significance(participation_partition, outcome_partition, method='chi square')
-        
-        # Only include statistically significant paths (p ≤ 0.05)
-        if is_significant:
-            results.append({
-                'Length': len(path),
-                'Frequency': path_freq,
-                'Path': path,
-                'Part&Success': part_success,
-                'Part&Unsuccess': part_unsuccess,
-                'NonPart&Success': non_part_success,
-                'NonPart&Unsuccess': non_part_unsuccess,
-                'p_value': p_value
-            })
-    
-    # Create DataFrame
-    results_df = pd.DataFrame(results)
-    
-    if len(results_df) > 0:
-        # Sort by p-value in descending order
-        #results_df = results_df.sort_values('p_value')
-        
-        # Save to CSV
-        results_df.to_csv(output_file, index=False)
-        logging.info(f"Found {len(results_df)} statistically significant paths (p ≤ 0.05)")
-        logging.info(f"Results saved to {output_file}")
-    else:
-        logging.info("No statistically significant paths found")
-    
-    return results_df
-
-
 if __name__ == '__main__':
     current_dir = os.path.abspath(os.curdir)
     bpi2017_path = os.path.join(current_dir, "event_logs/BPI2017.xes")
-    #print("Event log path:", bpi2017_path)
-    
+
     # Load log
     log = load_event_log(bpi2017_path)
     logging.info('The log has ' + str(len(log)) + ' traces.')
@@ -271,47 +135,46 @@ if __name__ == '__main__':
     
     successful_cases, unsuccessful_cases = preprocessing.partition_outcome(log)
 
+    class_under_10, class_10_to_30, class_over_30 = preprocessing.partition_on_throughput(log)
+
     print("Running main...")
     hle_all_dic, hla_paths_dict = main(log, FRAME, TRAFFIC_TYPE, SELECTED_F_LIST, P, CO_THRESH, CO_PATH_THRESH, 
                                         RES_INFO, ONLY_MAXIMAL_PATHS, PATH_FREQUENCY, ACT_SELECTION, res_selection, 
                                         SEG_METHOD, TYPE_BASED, SEG_PERCENTILE)
     
-#     # Debug: Check structure of hle_all_dic
-#     if len(hle_all_dic) > 0:
-#         first_key = list(hle_all_dic.keys())[0]
-#         first_value = hle_all_dic[first_key]
-#         print(f"\nDEBUG: First HLE key: {first_key}, type: {type(first_key)}")
-#         print(f"DEBUG: First HLE value type: {type(first_value)}")
-#         print(f"DEBUG: First HLE value keys: {first_value.keys() if isinstance(first_value, dict) else 'Not a dict'}")
-#         print(f"DEBUG: First HLE value sample: {first_value}\n")
-    
-    # Print HLE table with statistics
-    # print_hle_statistics(hle_all_dic)
-    
-#     # Debug: Print first HLA path
-#     if len(hla_paths_dict) > 0:
-#         first_key = list(hla_paths_dict.keys())[0]
-#         first_value = hla_paths_dict[first_key]
-#         print(f"\n=== HLA PATHS DICT STRUCTURE ===")
-#         print(f"Total number of HLA paths: {len(hla_paths_dict)}")
-#         print(f"\nFirst HLA path key: {first_key}")
-#         print(f"Key type: {type(first_key)}")
-#         print(f"\nFirst HLA path value: {first_value}")
-#         print(f"Value type: {type(first_value)}")
-#         if isinstance(first_value, tuple) and len(first_value) == 2:
-#             print(f"\nValue structure: (frequency={first_value[0]}, cases={first_value[1]})")
-#             print(f"Number of cases participating: {len(first_value[1])}")
-#         print("="*50 + "\n")
-
     # Get control-flow dictionary: maps each case ID to its sequence of activity names
     control_flow_dict = case_participation.get_cf_dict(log)   
     
     # Generate DataFrame with statistics for each HLA path (frequency, participating/non-participating cases, etc.)
+    logging.info("Gather statistics on High-Level Attributes")
     df_paths = postprocess.gather_statistics(hle_all_dic, hla_paths_dict, control_flow_dict, P, CO_THRESH)
     
     # Test correlation between paths and case outcomes (success/failure) using chi-square test
-    results_outcome(df_paths, successful_cases, unsuccessful_cases)
-    
-    
+    logging.info("Produce result table for success rate analysis")
+    results_analysis.results_outcome(df_paths, successful_cases, unsuccessful_cases)
 
-    
+    # Test correlation between paths and case thoughput categories using chi-square test
+    logging.info("Produce result table for thoughput time analysis")
+    results_analysis.throughput_tables(df_paths, [class_under_10, class_10_to_30, class_over_30])
+
+    logging.info("Produce result tables for HLE of interest - Success and Failure")
+    statistics_csv_experiment.print_outcome_tables(
+    csv_path="results/outcome_results.csv",
+    queries=[
+        "(('exit', ('A_Complete', 'W_Call after offers|suspend')), ('enter', ('W_Call after offers|suspend', 'W_Call after offers|resume')))",
+        "(('batch', ('W_Validate application|suspend', 'W_Validate application|resume')), ('workload', ('W_Validate application|resume', 'W_Validate application|suspend')))",
+        "(('handover', ('W_Call incomplete files|suspend', 'W_Call incomplete files|resume')), ('workload', ('W_Call incomplete files|resume', 'W_Call incomplete files|suspend')))",
+        "(('delay', ('W_Validate application|suspend', 'W_Validate application|resume')),)"
+    ],
+    case_sensitive=False)
+
+    logging.info("Produce result tables for HLE of interest - Throughput")
+    statistics_csv_experiment.print_throughput_tables(
+        csv_path="results/throughput-3-classes.csv",
+        queries=[
+            "(('exit', ('A_Complete', 'W_Call after offers|suspend')), ('batch', ('W_Call after offers|suspend', 'W_Call after offers|resume')))",
+            "(('workload', ('W_Call after offers|schedule', 'W_Call after offers|start')), ('workload', ('W_Call after offers|start', 'A_Complete')), ('workload', ('A_Complete', 'W_Call after offers|suspend')))",
+            "(('exit', ('A_Validating', 'O_Returned')), ('workload', ('O_Returned', 'W_Validate application|suspend')))"
+        ],
+        case_sensitive=False
+    )
