@@ -70,7 +70,7 @@ def paths_and_cases_with_overlap(input_log, frame='days', traffic_type='High', s
     evaluation_by_theta_complete = eval.evaluation(instance_hlf_w_complete, instance_hlf_w_pair_complete, event_dict,
                                                    id_window_mapping, window_borders_dict)
 
-    logging.info('Detecting high-level events and the involved cases using ' + str(p*100) + 'th percentile as '
+    logging.info('Detecting high-level events and the involved cases using ' + str(int(p*100)) + 'th percentile as '
                                                                                                  'extremity threshold.')
     hle_all_dic, hle_all_by_theta, freq_dict, case_set_dic = hle_gen.hle_all(event_dict, traffic_type,
                                                                              evaluation_by_theta_complete,
