@@ -21,10 +21,10 @@ def get_resources(log, to_exclude=[]):
     
     for trace in log:
         for event in trace:
-            res = event['org:resource']
+            res = event.get('org:resource')
             if res not in exclude_set:
                 resources_set.add(res)
-
+                
     return resources_set
 
 def rename_workflow_activities(log):

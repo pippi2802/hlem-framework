@@ -37,19 +37,20 @@ SEG_PERCENTILE = 0.9
 def load_event_log(xes_path):
     """
     Load an event log from XES file with pickle caching.
-    
+   
     :param xes_path: Path to the .xes file
     :return: Event log object
     """
     cache_path = xes_path.replace('.xes', '.pickle')
-    
+   
     if os.path.isfile(cache_path):
         logging.info(f'Loading log from cache: {cache_path}')
         with open(cache_path, 'rb') as f:
-            return pickle.load(f)
+            cache = pickle.load(f)
+            return pm4py.convert_to_event_log(cache)
     else:
         logging.info(f'Reading XES file: {xes_path}')
-        log = pm4py.read_xes(xes_path)
+        log = pm4py.read_xes(xes_path, return_legacy_log_object=True)
         logging.info(f'Creating cache: {cache_path}')
         with open(cache_path, 'wb') as f:
             pickle.dump(log, f)
@@ -260,7 +261,7 @@ if __name__ == '__main__':
     logging.info('The log has ' + str(no_events) + ' events.')
     
     # Filter out incomplete cases
-    #log = preprocessing.filter_incomplete_cases(log)
+    log = preprocessing.filter_incomplete_cases(log)
     
     # Remove User_1 from the log
     logging.info("Getting resource selection")

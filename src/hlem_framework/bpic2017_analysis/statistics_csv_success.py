@@ -2,7 +2,7 @@ import pandas as pd
 
 # Load CSV
 df = pd.read_csv(
-    "success-2-classes.csv",
+    "outcome_results.csv",
     quotechar='"',
     skipinitialspace=True
 )
@@ -23,11 +23,11 @@ if filtered_df.empty:
 else:
     # Iterate over each matched path
     for path, group in filtered_df.groupby('Path'):
-        success_part = group['Part&Succ'].sum()
-        failure_part = group['Part&NotSucc'].sum()
-        success_nonpart = group['NonPart&Succ'].sum()
-        failure_nonpart = group['NonPart&NotSucc'].sum()
-        
+        success_part = group['Part&Success'].sum()
+        failure_part = group['Part&Unsuccess'].sum()
+        success_nonpart = group['NonPart&Success'].sum()
+        failure_nonpart = group['NonPart&Unsuccess'].sum()
+
         total_success = success_part + success_nonpart
         total_failure = failure_part + failure_nonpart
         total_part = success_part + failure_part
