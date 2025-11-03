@@ -2,6 +2,7 @@
 __pycache__
 dist
 venv
-src/hlem_framework/bpic2017_analysis/event_logs/BPI2017.xes
+src\hlem_framework\bpic2017_analysis\event_logs\BPI2017.pickle
+src\hlem_framework\bpic2017_analysis\event_logs\BPI2017.xes
 .pickle
 **/*.egg-info
