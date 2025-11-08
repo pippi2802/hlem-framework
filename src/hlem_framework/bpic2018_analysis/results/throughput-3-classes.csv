@@ -1,0 +1,20 @@
+,Length,Frequency,Path,Part&under5,Part&over10,NonPart&under5,NonPart&over10,p
+0,1,14,"(('enter', ('finish editing', 'initialize')),)",3613,3301,1675,1698,0.013352155793863285
+1,1,14,"(('workload', ('save', 'calculate')),)",702,737,1484,1347,0.02466228477697996
+2,1,13,"(('enter', ('save', 'calculate')),)",847,938,1339,1146,3.3607620248177206e-05
+3,1,14,"(('exit', ('save', 'calculate')),)",890,1009,1296,1075,4.125960083589675e-07
+4,1,11,"(('enter', ('save', 'finish editing')),)",597,457,1334,1210,0.021354704941818348
+5,1,11,"(('exit', ('save', 'finish editing')),)",597,456,1334,1211,0.01919458284994302
+6,1,10,"(('exit', ('finish editing', 'calculate')),)",1806,1296,263,253,0.002052722824697817
+7,1,19,"(('delay', ('mail valid', 'initialize')),)",0,1276,7090,5514,0.0
+8,1,45,"(('delay', ('mail income', 'mail valid')),)",0,891,6825,5676,0.0
+9,1,62,"(('batch', ('mail income', 'mail valid')),)",4706,1741,2119,4826,0.0
+10,1,16,"(('batch', ('mail valid', 'initialize')),)",6864,3898,226,2892,0.0
+11,1,10,"(('batch', ('begin editing', 'begin editing')),)",99,41,1344,2302,5.551115123125783e-16
+12,1,11,"(('delay', ('initialize', 'begin editing')),)",111,54,7261,6930,3.863591165964575e-05
+13,1,15,"(('delay', ('finish editing', 'begin editing')),)",150,66,7176,6874,8.299200138228713e-08
+14,1,41,"(('delay', ('finish editing', 'initialize')),)",1186,1679,3852,3136,0.0
+15,1,21,"(('batch', ('finish editing', 'initialize')),)",1833,2464,3205,2351,0.0
+16,1,10,"(('batch', ('initialize', 'begin editing')),)",247,194,7125,6790,0.04684207998906054
+17,1,86,"(('batch', ('finish editing', 'begin editing')),)",7154,6818,172,122,0.013186417091719749
+18,1,13,"(('batch', ('calculate', 'calculate')),)",919,724,1349,1295,0.0017289941446668733

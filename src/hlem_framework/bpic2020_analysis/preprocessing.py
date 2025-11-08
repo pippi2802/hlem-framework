@@ -93,10 +93,10 @@ def partition_outcome(log):
     unsuccessful_case_ids = []
     
     for i, trace in enumerate(log):
-        if any((event.get('concept:name') or '').lower() == 'payment handled' for event in trace):
-            successful_case_ids.append(i)
-        else: 
+        if any((event.get('concept:name') or '') == 'A_DECLINED' for event in trace):
             unsuccessful_case_ids.append(i)
+        else: 
+            successful_case_ids.append(i)
     
     total_cases = len(log)
     num_successful = len(successful_case_ids)
@@ -128,9 +128,9 @@ def partition_on_throughput(log):
         ts_first = trace[0]['time:timestamp']
         ts_last = trace[len(trace)-1]['time:timestamp']
         throughput = (ts_last - ts_first).days
-        if throughput <= 5:
+        if throughput <= 10:
             class_under_5.append(i)
-        elif throughput < 10:
+        elif throughput < 18:
             class_5_to_10.append(i)
         else:
             class_over_10.append(i)
@@ -145,7 +145,7 @@ def filter_incomplete_cases(log):
     Filters out incomplete cases from the event log.
     Keep only cases that contain at least one completion activity.
     """
-    completion_activities = ['Payment Handled', 'Request For Payment REJECTED by EMPLOYEE', 'Request For Payment REJECTED by MISSING']
+    completion_activities = ['A_DECLINED', 'W_Valideren aanvraag', 'W_Afhandelen leads', 'W_Completeren aanvraag', 'W_Nabellen offertes']
     logging.info(f"Filtering incomplete cases")
     
     original_count = len(log)

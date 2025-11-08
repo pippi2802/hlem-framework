@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
 
 TRAFFIC_TYPE = 'High'
 FRAME = 'days'
-SELECTED_F_LIST = ['exit', 'enter', 'handover', 'workload', 'batch', 'delay']
+SELECTED_F_LIST = ['exit', 'enter',  'batch','delay'] 
 P = 0.9
 CO_THRESH = 0.5
 CO_PATH_THRESH = 0.5
@@ -114,7 +114,7 @@ def main(log, frame, traffic_type, selected_f_list, p, co_thresh, co_path_thresh
 
 if __name__ == '__main__':
     current_dir = os.path.abspath(os.curdir)
-    bpi2017_path = os.path.join(current_dir, "event_logs/BPI2020.xes")
+    bpi2017_path = os.path.join(current_dir, "event_logs/BPI2012.xes")
 
     # Load log
     log = load_event_log(bpi2017_path)
@@ -127,12 +127,12 @@ if __name__ == '__main__':
     log = preprocessing.filter_incomplete_cases(log)
     
     # Remove User_1 from the log
-    logging.info("Getting resource selection")
-    res_selection = preprocessing.get_resources(log, TO_EXCLUDE)
+    # logging.info("Getting resource selection")
+    # res_selection = preprocessing.get_resources(log, TO_EXCLUDE)
 
-    # Rename E: org:role into org:resource
-    logging.info("Rename")
-    log = preprocessing.rename_resources(log)
+    # # Rename E: org:role into org:resource
+    # logging.info("Rename")
+    # log = preprocessing.rename_resources(log)
 
     # Rename workflow activities
     log = preprocessing.rename_workflow_activities(log)
@@ -143,7 +143,7 @@ if __name__ == '__main__':
 
     print("Running main...")
     hle_all_dic, hla_paths_dict = main(log, FRAME, TRAFFIC_TYPE, SELECTED_F_LIST, P, CO_THRESH, CO_PATH_THRESH, 
-                                        RES_INFO, ONLY_MAXIMAL_PATHS, PATH_FREQUENCY, ACT_SELECTION, res_selection, 
+                                        RES_INFO, ONLY_MAXIMAL_PATHS, PATH_FREQUENCY, ACT_SELECTION, 'all', 
                                         SEG_METHOD, TYPE_BASED, SEG_PERCENTILE)
     
     # Get control-flow dictionary: maps each case ID to its sequence of activity names
