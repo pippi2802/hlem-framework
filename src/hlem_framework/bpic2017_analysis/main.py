@@ -124,7 +124,8 @@ if __name__ == '__main__':
     logging.info('The log has ' + str(no_events) + ' events.')
     
     # Filter out incomplete cases
-    #log = preprocessing.filter_incomplete_cases(log)
+    log = preprocessing.filter_incomplete_cases(log)
+    logging.info('The log has ' + str(no_events) + ' events.')
     
     # Remove User_1 from the log
     logging.info("Getting resource selection")

@@ -1,0 +1,734 @@
+,hle-id,type,segment,activity,value,window
+0,0,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",44,364
+1,1,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",37,364
+2,2,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",43,364
+3,3,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",33,371
+4,4,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",34,371
+5,5,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",22,371
+6,6,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",35,371
+7,7,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",30,371
+8,8,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",33,372
+9,9,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",33,372
+10,10,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",30,378
+11,11,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",30,378
+12,12,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",19,378
+13,13,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",30,378
+14,14,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",28,378
+15,15,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",21,378
+16,16,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",39,379
+17,17,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",41,379
+18,18,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",33,379
+19,19,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",21,379
+20,20,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",40,379
+21,21,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",31,379
+22,22,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",32,385
+23,23,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",43,385
+24,24,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",28,385
+25,25,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",41,385
+26,26,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",41,386
+27,27,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",30,386
+28,28,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",24,386
+29,29,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",41,386
+30,30,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",32,386
+31,31,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",35,388
+32,32,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",29,388
+33,33,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",35,388
+34,34,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",74,388
+35,35,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",37,392
+36,36,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",31,392
+37,37,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",14,392
+38,38,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",31,392
+39,39,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",33,392
+40,40,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",18,392
+41,41,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",37,393
+42,42,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",35,393
+43,43,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",44,395
+44,44,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",36,395
+45,45,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",36,395
+46,46,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",71,395
+47,47,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",26,395
+48,48,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",18,395
+49,49,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",33,406
+50,50,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",13,406
+51,51,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",22,406
+52,52,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",38,407
+53,53,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",38,407
+54,54,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",35,408
+55,55,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",26,408
+56,56,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",18,408
+57,57,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",44,408
+58,58,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",37,409
+59,59,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",37,409
+60,60,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",37,413
+61,61,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",29,413
+62,62,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",47,414
+63,63,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",47,414
+64,64,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",30,415
+65,65,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",13,415
+66,66,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",35,416
+67,67,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",14,416
+68,68,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",72,416
+69,69,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",37,416
+70,70,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",37,420
+71,71,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",33,420
+72,72,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",22,420
+73,73,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",49,421
+74,74,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",15,421
+75,75,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",49,421
+76,76,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",82,423
+77,77,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",38,427
+78,78,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",51,428
+79,79,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",51,428
+80,80,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",80,430
+81,81,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",29,434
+82,82,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",31,435
+83,83,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",31,435
+84,84,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",31,437
+85,85,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",31,437
+86,86,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",29,442
+87,87,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",38,442
+88,88,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",14,442
+89,89,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",38,442
+90,90,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",36,443
+91,91,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",28,443
+92,92,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",33,444
+93,93,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",33,444
+94,94,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",36,449
+95,95,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",29,449
+96,96,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",15,450
+97,97,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",31,451
+98,98,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",46,451
+99,99,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",39,451
+100,100,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",20,451
+101,101,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",46,451
+102,102,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",92,451
+103,103,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",36,451
+104,104,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",21,451
+105,105,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",40,456
+106,106,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",40,456
+107,107,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",19,458
+108,108,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",29,463
+109,109,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",14,465
+110,110,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",69,465
+111,111,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",18,469
+112,112,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",33,470
+113,113,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",41,470
+114,114,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",41,470
+115,115,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",30,472
+116,116,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",34,477
+117,117,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",34,477
+118,118,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",31,479
+119,119,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",31,479
+120,120,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",31,505
+121,121,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",44,512
+122,122,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",43,512
+123,123,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",13,513
+124,124,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",72,514
+125,125,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",38,519
+126,126,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",27,519
+127,127,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",20,519
+128,128,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",39,521
+129,129,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",39,521
+130,130,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",52,540
+131,131,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",40,540
+132,132,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",40,540
+133,133,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",34,540
+134,134,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",16,540
+135,135,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",30,541
+136,136,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",14,541
+137,137,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",32,541
+138,138,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",41,542
+139,139,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",62,542
+140,140,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",31,542
+141,141,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",15,542
+142,142,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",62,542
+143,143,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",32,542
+144,144,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",13,546
+145,145,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",72,546
+146,146,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",29,546
+147,147,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",19,546
+148,148,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",29,547
+149,149,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",43,547
+150,150,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",43,547
+151,151,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",46,549
+152,152,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",46,549
+153,153,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",16,549
+154,154,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",30,556
+155,155,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",26,569
+156,156,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",16,569
+157,157,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",22,591
+158,158,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",29,591
+159,159,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",19,595
+160,160,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",31,596
+161,161,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",32,598
+162,162,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",33,598
+163,163,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",33,598
+164,164,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",38,610
+165,165,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",38,610
+166,166,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",58,611
+167,167,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",46,611
+168,168,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",39,611
+169,169,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",47,611
+170,170,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",52,611
+171,171,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",17,611
+172,172,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",29,612
+173,173,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",39,612
+174,174,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",32,612
+175,175,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",14,612
+176,176,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",39,612
+177,177,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",30,612
+178,178,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",36,613
+179,179,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",36,613
+180,180,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",35,617
+181,181,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",35,617
+182,182,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",31,619
+183,183,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",84,619
+184,184,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",14,624
+185,185,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",30,624
+186,186,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",21,625
+187,187,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",62,626
+188,188,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",19,626
+189,189,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",45,626
+190,190,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",22,626
+191,191,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",37,627
+192,192,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",37,627
+193,193,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",33,630
+194,194,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",35,630
+195,195,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",21,630
+196,196,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",34,630
+197,197,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",31,630
+198,198,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",19,630
+199,199,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",45,631
+200,200,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",53,631
+201,201,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",52,631
+202,202,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",37,633
+203,203,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",37,633
+204,204,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",79,633
+205,205,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",33,637
+206,206,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",36,637
+207,207,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",22,637
+208,208,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",35,637
+209,209,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",30,637
+210,210,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",18,637
+211,211,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",34,638
+212,212,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",34,638
+213,213,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",34,638
+214,214,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",31,640
+215,215,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",32,645
+216,216,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",19,645
+217,217,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",32,645
+218,218,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",36,646
+219,219,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",32,646
+220,220,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",32,647
+221,221,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",32,647
+222,222,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",70,647
+223,223,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",42,653
+224,224,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",34,653
+225,225,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",21,653
+226,226,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",13,653
+227,227,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",34,653
+228,228,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",37,653
+229,229,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",57,654
+230,230,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",31,654
+231,231,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",14,654
+232,232,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",55,654
+233,233,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",69,654
+234,234,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",31,654
+235,235,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",29,658
+236,236,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",15,658
+237,237,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",29,658
+238,238,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",47,660
+239,239,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",19,660
+240,240,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",33,660
+241,241,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",20,660
+242,242,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",41,661
+243,243,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",40,661
+244,244,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",34,662
+245,245,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",33,662
+246,246,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",33,662
+247,247,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",27,662
+248,248,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",20,662
+249,249,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",77,665
+250,250,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",31,667
+251,251,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",43,668
+252,252,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",43,668
+253,253,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",33,673
+254,254,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",36,673
+255,255,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",36,673
+256,256,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",27,673
+257,257,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",79,675
+258,258,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",35,679
+259,259,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",24,679
+260,260,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",35,679
+261,261,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",34,680
+262,262,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",22,680
+263,263,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",17,680
+264,264,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",33,681
+265,265,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",29,682
+266,266,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",42,682
+267,267,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",40,682
+268,268,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",14,683
+269,269,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",38,687
+270,270,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",37,687
+271,271,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",33,688
+272,272,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",26,688
+273,273,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",33,688
+274,274,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",38,689
+275,275,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",38,689
+276,276,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",36,693
+277,277,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",24,693
+278,278,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",36,693
+279,279,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",21,694
+280,280,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",29,694
+281,281,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",31,695
+282,282,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",26,695
+283,283,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",46,696
+284,284,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",44,696
+285,285,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",35,696
+286,286,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",20,696
+287,287,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",13,696
+288,288,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",44,696
+289,289,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",34,696
+290,290,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",32,696
+291,291,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",18,696
+292,292,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",18,697
+293,293,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",29,700
+294,294,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",37,700
+295,295,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",27,700
+296,296,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",38,700
+297,297,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",34,701
+298,298,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",40,701
+299,299,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",47,701
+300,300,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",21,701
+301,301,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",24,701
+302,302,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",40,701
+303,303,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",46,701
+304,304,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",21,701
+305,305,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",41,702
+306,306,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",31,702
+307,307,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",20,702
+308,308,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",30,702
+309,309,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",30,702
+310,310,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",35,702
+311,311,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",34,703
+312,312,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",46,703
+313,313,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",45,703
+314,314,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",22,703
+315,315,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",24,703
+316,316,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",44,703
+317,317,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",83,703
+318,318,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",46,703
+319,319,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",31,704
+320,320,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",16,704
+321,321,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",30,704
+322,322,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",45,707
+323,323,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",42,707
+324,324,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",25,707
+325,325,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",71,707
+326,326,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",43,707
+327,327,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",32,707
+328,328,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",25,707
+329,329,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",76,708
+330,330,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",83,708
+331,331,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",32,708
+332,332,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",20,708
+333,333,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",81,708
+334,334,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",33,708
+335,335,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",31,708
+336,336,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",16,708
+337,337,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",39,709
+338,338,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",33,709
+339,339,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",45,709
+340,340,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",28,709
+341,341,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",15,709
+342,342,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",32,709
+343,343,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",43,709
+344,344,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",31,709
+345,345,exit,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('exit', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",28,709
+346,346,enter,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('enter', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",56,710
+347,347,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",60,710
+348,348,enter,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('enter', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",34,710
+349,349,enter,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('enter', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",17,710
+350,350,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",60,710
+351,351,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",133,710
+352,352,exit,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('exit', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",34,710
+353,353,enter,"('Request Payment', 'Payment Handled')","('enter', ('Request Payment', 'Payment Handled'))",54,724
+354,354,exit,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('exit', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",53,724
+355,355,exit,"('Request Payment', 'Payment Handled')","('exit', ('Request Payment', 'Payment Handled'))",107,724
+356,356,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(154, 155)"
+357,357,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(242, 245)"
+358,358,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(256, 259)"
+359,359,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(259, 260)"
+360,360,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(266, 267)"
+361,361,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(274, 276)"
+362,362,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(275, 276)"
+363,363,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",14,"(326, 329)"
+364,364,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(336, 337)"
+365,365,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",15,"(364, 365)"
+366,366,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",14,"(365, 366)"
+367,367,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(368, 371)"
+368,368,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(368, 371)"
+369,369,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",17,"(371, 372)"
+370,370,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(371, 372)"
+371,371,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",2,"(372, 373)"
+372,372,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",30,"(372, 374)"
+373,373,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(373, 374)"
+374,374,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",27,"(374, 378)"
+375,375,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",15,"(375, 378)"
+376,376,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",12,"(378, 379)"
+377,377,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(378, 379)"
+378,378,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",12,"(379, 381)"
+379,379,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",41,"(379, 381)"
+380,380,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(380, 381)"
+381,381,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(381, 382)"
+382,382,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(382, 385)"
+383,383,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",15,"(385, 386)"
+384,384,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(385, 388)"
+385,385,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(385, 392)"
+386,386,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",2,"(385, 415)"
+387,387,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(386, 387)"
+388,388,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(386, 387)"
+389,389,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",41,"(386, 388)"
+390,390,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(387, 388)"
+391,391,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(388, 389)"
+392,392,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",9,"(388, 389)"
+393,393,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",35,"(388, 392)"
+394,394,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",3,"(388, 423)"
+395,395,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(389, 392)"
+396,396,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(389, 392)"
+397,397,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",15,"(392, 393)"
+398,398,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(393, 394)"
+399,399,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(393, 395)"
+400,400,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",37,"(393, 395)"
+401,401,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(394, 395)"
+402,402,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(394, 395)"
+403,403,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",16,"(395, 396)"
+404,404,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",36,"(395, 399)"
+405,405,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(399, 400)"
+406,406,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",7,"(400, 401)"
+407,407,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(401, 402)"
+408,408,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(402, 407)"
+409,409,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",8,"(403, 406)"
+410,410,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(403, 407)"
+411,411,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",11,"(406, 408)"
+412,412,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(407, 408)"
+413,413,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",12,"(407, 409)"
+414,414,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",38,"(407, 409)"
+415,415,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(408, 409)"
+416,416,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",12,"(408, 410)"
+417,417,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",7,"(408, 410)"
+418,418,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",36,"(409, 413)"
+419,419,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(410, 413)"
+420,420,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",12,"(410, 414)"
+421,421,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",17,"(413, 414)"
+422,422,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(413, 415)"
+423,423,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",47,"(414, 416)"
+424,424,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(415, 416)"
+425,425,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",3,"(415, 416)"
+426,426,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(416, 417)"
+427,427,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",7,"(416, 417)"
+428,428,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(417, 420)"
+429,429,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",25,"(420, 421)"
+430,430,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(421, 422)"
+431,431,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",49,"(421, 423)"
+432,432,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",13,"(422, 423)"
+433,433,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(424, 427)"
+434,434,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(424, 427)"
+435,435,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",3,"(426, 428)"
+436,436,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",25,"(427, 428)"
+437,437,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(427, 430)"
+438,438,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(428, 429)"
+439,439,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(428, 429)"
+440,440,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(428, 430)"
+441,441,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",50,"(428, 430)"
+442,442,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",2,"(428, 454)"
+443,443,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(429, 430)"
+444,444,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",27,"(430, 434)"
+445,445,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",2,"(431, 623)"
+446,446,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(434, 435)"
+447,447,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(435, 437)"
+448,448,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",31,"(435, 437)"
+449,449,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",12,"(436, 437)"
+450,450,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(436, 437)"
+451,451,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(437, 438)"
+452,452,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",31,"(437, 441)"
+453,453,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(438, 442)"
+454,454,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(441, 442)"
+455,455,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(442, 443)"
+456,456,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(442, 444)"
+457,457,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",38,"(442, 444)"
+458,458,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",19,"(443, 444)"
+459,459,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(443, 444)"
+460,460,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(444, 449)"
+461,461,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",33,"(444, 451)"
+462,462,delay,"('Request Payment', 'Payment Handled')","('delay', ('Request Payment', 'Payment Handled'))","(7, 33)","(444, 451)"
+463,463,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",12,"(446, 449)"
+464,464,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(449, 450)"
+465,465,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",16,"(449, 451)"
+466,466,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(449, 451)"
+467,467,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",13,"(450, 451)"
+468,468,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",7,"(450, 451)"
+469,469,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(451, 452)"
+470,470,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",45,"(451, 455)"
+471,471,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(451, 456)"
+472,472,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(451, 457)"
+473,473,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(452, 456)"
+474,474,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(455, 456)"
+475,475,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",40,"(456, 458)"
+476,476,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",14,"(457, 458)"
+477,477,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",10,"(458, 463)"
+478,478,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(459, 462)"
+479,479,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(463, 464)"
+480,480,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",12,"(463, 464)"
+481,481,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",8,"(463, 464)"
+482,482,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(463, 465)"
+483,483,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",14,"(464, 465)"
+484,484,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(465, 466)"
+485,485,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",30,"(465, 469)"
+486,486,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(466, 469)"
+487,487,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",12,"(469, 470)"
+488,488,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(470, 472)"
+489,489,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",41,"(470, 472)"
+490,490,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(471, 472)"
+491,491,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(471, 472)"
+492,492,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(471, 472)"
+493,493,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",29,"(472, 476)"
+494,494,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(472, 477)"
+495,495,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",15,"(476, 477)"
+496,496,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(477, 479)"
+497,497,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",34,"(477, 479)"
+498,498,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(478, 479)"
+499,499,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",31,"(479, 483)"
+500,500,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(483, 484)"
+501,501,delay,"('Request Payment', 'Payment Handled')","('delay', ('Request Payment', 'Payment Handled'))","(7, 17)","(483, 490)"
+502,502,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(484, 485)"
+503,503,delay,"('Request Payment', 'Payment Handled')","('delay', ('Request Payment', 'Payment Handled'))","(6, 26)","(484, 490)"
+504,504,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(490, 491)"
+505,505,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(490, 491)"
+506,506,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(491, 492)"
+507,507,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(491, 493)"
+508,508,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(492, 493)"
+509,509,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(493, 498)"
+510,510,delay,"('Request Payment', 'Payment Handled')","('delay', ('Request Payment', 'Payment Handled'))","(7, 23)","(493, 500)"
+511,511,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",3,"(498, 499)"
+512,512,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(499, 500)"
+513,513,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(505, 506)"
+514,514,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(505, 507)"
+515,515,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(506, 507)"
+516,516,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(506, 507)"
+517,517,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(508, 512)"
+518,518,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",14,"(511, 512)"
+519,519,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(511, 512)"
+520,520,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",43,"(512, 514)"
+521,521,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(513, 514)"
+522,522,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(514, 519)"
+523,523,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",17,"(519, 521)"
+524,524,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",13,"(520, 521)"
+525,525,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",38,"(521, 525)"
+526,526,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(521, 526)"
+527,527,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(522, 525)"
+528,528,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(525, 528)"
+529,529,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",28,"(526, 528)"
+530,530,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(527, 528)"
+531,531,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(528, 532)"
+532,532,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",2,"(528, 610)"
+533,533,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(532, 535)"
+534,534,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(533, 535)"
+535,535,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",30,"(533, 535)"
+536,536,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",10,"(534, 535)"
+537,537,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(535, 540)"
+538,538,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",3,"(536, 540)"
+539,539,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(538, 540)"
+540,540,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(539, 540)"
+541,541,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(539, 540)"
+542,542,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",13,"(540, 541)"
+543,543,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",21,"(540, 542)"
+544,544,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",40,"(540, 542)"
+545,545,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",14,"(541, 542)"
+546,546,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(542, 543)"
+547,547,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",62,"(542, 546)"
+548,548,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(542, 547)"
+549,549,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",15,"(546, 547)"
+550,550,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(547, 548)"
+551,551,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",12,"(547, 549)"
+552,552,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",43,"(547, 549)"
+553,553,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",17,"(548, 549)"
+554,554,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(548, 549)"
+555,555,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",46,"(549, 553)"
+556,556,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(552, 555)"
+557,557,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",12,"(555, 556)"
+558,558,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",29,"(556, 560)"
+559,559,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(556, 561)"
+560,560,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(560, 561)"
+561,561,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(561, 567)"
+562,562,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",2,"(567, 569)"
+563,563,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(569, 570)"
+564,564,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",29,"(570, 574)"
+565,565,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",3,"(578, 581)"
+566,566,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",7,"(585, 588)"
+567,567,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(590, 591)"
+568,568,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",10,"(591, 592)"
+569,569,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(591, 592)"
+570,570,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",29,"(591, 595)"
+571,571,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",10,"(591, 598)"
+572,572,delay,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('delay', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))","(7, 10)","(591, 598)"
+573,573,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(592, 595)"
+574,574,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(592, 596)"
+575,575,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(595, 596)"
+576,576,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(595, 596)"
+577,577,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(596, 597)"
+578,578,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(596, 598)"
+579,579,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(598, 599)"
+580,580,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",33,"(598, 602)"
+581,581,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(603, 604)"
+582,582,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(604, 605)"
+583,583,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(609, 610)"
+584,584,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",2,"(610, 611)"
+585,585,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(610, 611)"
+586,586,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",38,"(610, 612)"
+587,587,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",21,"(611, 612)"
+588,588,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",27,"(611, 613)"
+589,589,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",39,"(612, 616)"
+590,590,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(612, 617)"
+591,591,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",32,"(613, 619)"
+592,592,delay,"('Request Payment', 'Payment Handled')","('delay', ('Request Payment', 'Payment Handled'))","(6, 32)","(613, 619)"
+593,593,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(616, 617)"
+594,594,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",35,"(617, 619)"
+595,595,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(618, 619)"
+596,596,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(619, 646)"
+597,597,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",4,"(620, 623)"
+598,598,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",2,"(623, 624)"
+599,599,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",8,"(623, 625)"
+600,600,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(623, 626)"
+601,601,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(624, 626)"
+602,602,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(624, 626)"
+603,603,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(625, 626)"
+604,604,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",11,"(625, 626)"
+605,605,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",21,"(626, 627)"
+606,606,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(626, 630)"
+607,607,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(626, 631)"
+608,608,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",36,"(627, 630)"
+609,609,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",20,"(630, 631)"
+610,610,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(631, 632)"
+611,611,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(631, 633)"
+612,612,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",53,"(631, 633)"
+613,613,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(632, 633)"
+614,614,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(633, 634)"
+615,615,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",37,"(633, 637)"
+616,616,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(633, 637)"
+617,617,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(634, 637)"
+618,618,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",15,"(637, 638)"
+619,619,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",10,"(637, 638)"
+620,620,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(638, 639)"
+621,621,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",34,"(638, 640)"
+622,622,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",13,"(639, 640)"
+623,623,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",31,"(640, 644)"
+624,624,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(644, 645)"
+625,625,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",11,"(645, 646)"
+626,626,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",32,"(645, 647)"
+627,627,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(645, 647)"
+628,628,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",15,"(646, 647)"
+629,629,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",32,"(647, 651)"
+630,630,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(648, 653)"
+631,631,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",10,"(651, 653)"
+632,632,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(652, 653)"
+633,633,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",23,"(653, 654)"
+634,634,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",7,"(653, 660)"
+635,635,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(654, 655)"
+636,636,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",57,"(654, 658)"
+637,637,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(658, 659)"
+638,638,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(658, 660)"
+639,639,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(658, 662)"
+640,640,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(659, 660)"
+641,641,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",30,"(659, 661)"
+642,642,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",24,"(660, 661)"
+643,643,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(660, 662)"
+644,644,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(660, 662)"
+645,645,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(661, 662)"
+646,646,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(661, 662)"
+647,647,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",41,"(661, 665)"
+648,648,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",32,"(662, 665)"
+649,649,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(662, 668)"
+650,650,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",8,"(665, 667)"
+651,651,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",14,"(667, 668)"
+652,652,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(667, 669)"
+653,653,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",43,"(668, 672)"
+654,654,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(668, 673)"
+655,655,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(669, 673)"
+656,656,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(672, 673)"
+657,657,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(673, 675)"
+658,658,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",36,"(673, 675)"
+659,659,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(674, 675)"
+660,660,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(674, 675)"
+661,661,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(675, 676)"
+662,662,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",30,"(675, 679)"
+663,663,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(676, 680)"
+664,664,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(679, 680)"
+665,665,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",11,"(679, 680)"
+666,666,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",9,"(679, 680)"
+667,667,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",12,"(680, 681)"
+668,668,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",30,"(680, 682)"
+669,669,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",24,"(681, 682)"
+670,670,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(682, 683)"
+671,671,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(682, 683)"
+672,672,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",42,"(682, 686)"
+673,673,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(683, 684)"
+674,674,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",17,"(686, 687)"
+675,675,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",7,"(687, 688)"
+676,676,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(687, 689)"
+677,677,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",37,"(687, 689)"
+678,678,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(688, 689)"
+679,679,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",13,"(688, 689)"
+680,680,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",37,"(689, 693)"
+681,681,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",7,"(690, 692)"
+682,682,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",12,"(692, 694)"
+683,683,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(693, 694)"
+684,684,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",12,"(694, 695)"
+685,685,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(694, 724)"
+686,686,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",17,"(695, 696)"
+687,687,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",13,"(696, 700)"
+688,688,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",44,"(696, 700)"
+689,689,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",10,"(696, 700)"
+690,690,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(697, 700)"
+691,691,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",8,"(697, 702)"
+692,692,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",15,"(700, 701)"
+693,693,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",5,"(700, 701)"
+694,694,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",11,"(700, 702)"
+695,695,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",6,"(700, 702)"
+696,696,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",28,"(700, 703)"
+697,697,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(700, 708)"
+698,698,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(701, 702)"
+699,699,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",9,"(701, 702)"
+700,700,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",15,"(701, 702)"
+701,701,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",40,"(701, 703)"
+702,702,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",18,"(702, 703)"
+703,703,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",8,"(702, 724)"
+704,704,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",11,"(703, 704)"
+705,705,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",7,"(703, 704)"
+706,706,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",8,"(703, 704)"
+707,707,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",46,"(703, 707)"
+708,708,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",9,"(704, 707)"
+709,709,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",8,"(704, 707)"
+710,710,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(704, 708)"
+711,711,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",9,"(704, 724)"
+712,712,batch,"('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION')","('batch', ('Request For Payment SUBMITTED by EMPLOYEE', 'Request For Payment APPROVED by ADMINISTRATION'))",2,"(706, 707)"
+713,713,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",31,"(707, 708)"
+714,714,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",8,"(707, 708)"
+715,715,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",7,"(707, 709)"
+716,716,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",15,"(708, 709)"
+717,717,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",13,"(708, 709)"
+718,718,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",7,"(708, 709)"
+719,719,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",14,"(708, 710)"
+720,720,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",82,"(708, 710)"
+721,721,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",15,"(708, 711)"
+722,722,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",18,"(709, 710)"
+723,723,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by SUPERVISOR'))",12,"(709, 710)"
+724,724,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(710, 724)"
+725,725,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",60,"(710, 724)"
+726,726,delay,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('delay', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))","(14, 10)","(710, 724)"
+727,727,delay,"('Request Payment', 'Payment Handled')","('delay', ('Request Payment', 'Payment Handled'))","(14, 60)","(710, 724)"
+728,728,batch,"('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER')","('batch', ('Request For Payment APPROVED by ADMINISTRATION', 'Request For Payment APPROVED by BUDGET OWNER'))",7,"(710, 729)"
+729,729,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",28,"(711, 724)"
+730,730,delay,"('Request Payment', 'Payment Handled')","('delay', ('Request Payment', 'Payment Handled'))","(13, 28)","(711, 724)"
+731,731,batch,"('Request Payment', 'Payment Handled')","('batch', ('Request Payment', 'Payment Handled'))",54,"(724, 728)"
+732,732,batch,"('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment')","('batch', ('Request For Payment FINAL_APPROVED by SUPERVISOR', 'Request Payment'))",10,"(729, 731)"

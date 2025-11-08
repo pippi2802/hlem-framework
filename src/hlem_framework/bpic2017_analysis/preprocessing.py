@@ -2,6 +2,7 @@ import logging
 import pandas as pd
 from pm4py.objects.log.obj import EventLog 
 from pm4py.algo.filtering.log.attributes import attributes_filter
+import pm4py
 
 logging.basicConfig(level=logging.INFO)
 
@@ -131,11 +132,11 @@ def filter_incomplete_cases(log):
     logging.info(f"Filtering incomplete cases")
     
     original_count = len(log)
-    
-    filtered_log = attributes_filter.apply(log, completion_activities, 
-                                           parameters={attributes_filter.Parameters.ATTRIBUTE_KEY: "concept:name",
-                                                      attributes_filter.Parameters.POSITIVE: True})
-    
+
+    filtered_log = pm4py.filter_event_attribute_values(log, "concept:name", completion_activities, level="case", retain=True)
+
+    # filtered_log = pm4py.filter_end_activities(log, completion_activities, retain=True, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
+
     filtered_count = len(filtered_log)
     removed_count = original_count - filtered_count
     
