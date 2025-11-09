@@ -1,0 +1,106 @@
+Length,Frequency,Path,Part&4e,Part&e7,Part&6b,Part&d4,NonPart&4e,NonPart&e7,NonPart&6b,NonPart&d4,p_value
+8,12,"(('enter', ('calculate', 'calculate')), ('exit', ('calculate', 'calculate')), ('workload', ('calculate', 'calculate')), ('exit', ('calculate', 'calculate')), ('workload', ('calculate', 'calculate')), ('exit', ('calculate', 'finish editing')), ('exit', ('finish editing', 'begin editing')), ('workload', ('begin editing', 'calculate')))",2441,2189,2063,0,414,136,340,26,0.0
+7,12,"(('enter', ('calculate', 'calculate')), ('exit', ('calculate', 'calculate')), ('workload', ('calculate', 'calculate')), ('exit', ('calculate', 'calculate')), ('workload', ('calculate', 'calculate')), ('exit', ('calculate', 'finish editing')), ('workload', ('finish editing', 'begin editing')))",2436,2189,2063,0,420,138,352,27,0.0
+6,10,"(('enter', ('calculate', 'calculate')), ('exit', ('calculate', 'calculate')), ('workload', ('calculate', 'calculate')), ('exit', ('calculate', 'finish editing')), ('exit', ('finish editing', 'begin editing')), ('workload', ('begin editing', 'calculate')))",2708,3059,2086,0,568,260,478,1011,0.0
+5,10,"(('enter', ('calculate', 'calculate')), ('exit', ('calculate', 'calculate')), ('workload', ('calculate', 'calculate')), ('exit', ('calculate', 'finish editing')), ('workload', ('finish editing', 'begin editing')))",2698,3056,2086,0,603,266,507,1020,0.0
+6,10,"(('enter', ('calculate', 'calculate')), ('workload', ('calculate', 'calculate')), ('exit', ('calculate', 'calculate')), ('workload', ('calculate', 'calculate')), ('exit', ('calculate', 'finish editing')), ('workload', ('finish editing', 'begin editing')))",2436,2189,2063,0,510,194,428,196,0.0
+7,10,"(('enter', ('calculate', 'calculate')), ('workload', ('calculate', 'calculate')), ('exit', ('calculate', 'calculate')), ('workload', ('calculate', 'calculate')), ('exit', ('calculate', 'finish editing')), ('exit', ('finish editing', 'begin editing')), ('workload', ('begin editing', 'calculate')))",2441,2189,2063,0,496,192,403,193,0.0
+1,22,"(('enter', ('begin editing', 'calculate')),)",329,1678,406,422,4202,2696,3324,1488,0.0
+6,15,"(('enter', ('calculate', 'calculate')), ('enter', ('calculate', 'finish editing')), ('enter', ('finish editing', 'begin editing')), ('exit', ('begin editing', 'calculate')), ('workload', ('calculate', 'finish editing')), ('workload', ('finish editing', 'begin editing')))",2705,3054,2094,1296,400,273,171,76,0.0
+1,15,"(('enter', ('finish editing', 'calculate')),)",920,2136,572,536,487,167,685,169,0.0
+1,26,"(('enter', ('finish editing', 'begin editing')),)",458,427,375,1184,3779,3718,3029,591,0.0
+1,18,"(('exit', ('finish editing', 'begin editing')),)",321,366,258,333,3916,3779,3146,1442,0.0
+1,26,"(('exit', ('finish editing', 'save')),)",630,534,592,413,369,509,263,415,0.0
+1,15,"(('handover', ('finish editing', 'begin editing')),)",314,290,219,284,3923,3856,3184,1491,0.0
+1,32,"(('workload', ('save', 'save')),)",469,532,178,272,721,896,755,540,0.0
+1,20,"(('enter', ('begin editing', 'save')),)",933,544,624,571,754,1219,800,370,0.0
+1,25,"(('enter', ('finish editing', 'save')),)",686,567,567,609,313,476,288,219,0.0
+1,19,"(('exit', ('begin editing', 'calculate')),)",271,1290,340,296,4260,3084,3390,1614,0.0
+1,21,"(('workload', ('calculate', 'calculate')),)",2219,1568,1883,962,2306,2791,1847,941,0.0
+1,14,"(('exit', ('finish editing', 'calculate')),)",1365,1989,1214,636,42,314,43,69,0.0
+1,15,"(('workload', ('calculate', 'finish editing')),)",906,338,726,371,3625,4036,3004,1539,0.0
+2,10,"(('exit', ('begin editing', 'save')), ('workload', ('save', 'finish editing')))",276,675,170,116,481,525,388,137,0.0
+1,14,"(('enter', ('save', 'calculate')),)",743,790,965,454,1540,1253,855,790,0.0
+1,10,"(('workload', ('finish editing', 'decide')),)",0,188,1,0,4531,4186,3729,1910,0.0
+1,33,"(('workload', ('begin editing', 'save')),)",1081,1293,787,501,561,442,637,328,0.0
+1,10,"(('exit', ('initialize', 'begin editing')),)",60,108,22,188,4471,4266,3708,1722,0.0
+1,12,"(('exit', ('calculate', 'calculate')),)",106,116,215,42,4419,4243,3515,1861,0.0
+1,22,"(('exit', ('begin editing', 'save')),)",871,544,697,431,771,1191,727,398,0.0
+1,15,"(('handover', ('save', 'save')),)",15,83,142,40,1175,1345,791,772,0.0
+1,17,"(('workload', ('calculate', 'save')),)",368,98,216,29,1194,1426,978,675,0.0
+1,31,"(('workload', ('insert document', 'save')),)",227,350,194,217,819,536,732,601,0.0
+1,18,"(('enter', ('calculate', 'save')),)",1239,1125,1071,547,323,399,123,157,0.0
+2,16,"(('enter', ('calculate', 'calculate')), ('batch', ('calculate', 'calculate')))",4518,4349,3728,1834,3,6,1,34,0.0
+1,23,"(('exit', ('save', 'finish editing')),)",507,1075,611,282,581,594,438,184,0.0
+1,11,"(('batch', ('initialize', 'begin editing')),)",4498,4325,3718,1593,33,49,12,317,0.0
+1,21,"(('delay', ('finish editing', 'initialize')),)",4115,2663,3216,1287,283,1392,123,528,0.0
+1,22,"(('batch', ('finish editing', 'initialize')),)",4237,3605,3198,1519,200,478,136,296,0.0
+1,12,"(('batch', ('begin editing', 'calculate')),)",49,1486,70,96,4482,2888,3660,1814,0.0
+1,20,"(('batch', ('begin editing', 'save')),)",205,108,77,193,1471,1653,1347,718,0.0
+1,15,"(('delay', ('finish editing', 'calculate')),)",12,1298,0,191,1395,1005,1257,514,0.0
+1,19,"(('batch', ('finish editing', 'calculate')),)",1005,1985,479,341,402,318,778,364,0.0
+1,65,"(('batch', ('save', 'save')),)",385,508,174,201,805,920,759,611,0.0
+1,26,"(('batch', ('save', 'calculate')),)",733,971,700,527,1550,1072,1120,717,0.0
+1,14,"(('delay', ('performed', 'save')),)",245,152,72,98,306,660,168,301,0.0
+1,10,"(('delay', ('begin editing', 'save')),)",0,22,0,205,1642,1725,1424,711,0.0
+1,12,"(('batch', ('calculate', 'begin editing')),)",742,1097,618,240,466,354,707,316,0.0
+1,11,"(('delay', ('performed', 'calculate')),)",188,218,17,12,1029,374,1384,159,0.0
+1,10,"(('delay', ('finish editing', 'save')),)",0,22,0,205,999,1021,855,623,0.0
+1,24,"(('batch', ('calculate', 'save')),)",731,991,539,490,831,533,655,214,0.0
+1,26,"(('batch', ('mail income', 'initialize')),)",1038,560,670,76,279,460,447,436,0.0
+1,26,"(('delay', ('mail income', 'mail valid')),)",109,267,206,11,3344,3275,2622,1445,0.0
+1,11,"(('delay', ('begin editing', 'calculate')),)",9,463,0,166,4522,3911,3730,1744,0.0
+1,11,"(('delay', ('finish editing', 'performed')),)",3566,2298,2743,988,565,367,728,158,0.0
+1,34,"(('batch', ('calculate', 'calculate')),)",4520,4353,3729,1874,5,6,1,29,0.0
+1,21,"(('batch', ('mail valid', 'initialize')),)",2884,2551,2318,713,573,991,510,743,0.0
+1,23,"(('delay', ('mail income', 'initialize')),)",113,241,121,2,1046,806,881,454,0.0
+1,18,"(('exit', ('calculate', 'finish editing')),)",1117,795,948,460,3414,3579,2782,1450,1.1102230246251565e-16
+6,11,"(('enter', ('calculate', 'calculate')), ('enter', ('calculate', 'finish editing')), ('enter', ('finish editing', 'begin editing')), ('enter', ('begin editing', 'calculate')), ('workload', ('calculate', 'finish editing')), ('workload', ('finish editing', 'begin editing')))",2705,3054,2094,1285,400,273,171,87,4.440892098500626e-16
+6,11,"(('enter', ('calculate', 'calculate')), ('enter', ('calculate', 'finish editing')), ('enter', ('finish editing', 'begin editing')), ('enter', ('begin editing', 'calculate')), ('exit', ('calculate', 'finish editing')), ('workload', ('finish editing', 'begin editing')))",2705,3054,2094,1285,400,273,171,87,4.440892098500626e-16
+1,31,"(('exit', ('insert document', 'save')),)",566,469,616,559,480,417,310,259,6.661338147750939e-16
+1,31,"(('enter', ('insert document', 'save')),)",567,470,616,560,479,416,310,258,7.771561172376096e-16
+1,32,"(('batch', ('finish editing', 'save')),)",227,193,120,251,772,850,735,577,8.881784197001252e-16
+1,16,"(('workload', ('begin editing', 'insert document')),)",132,101,221,193,552,336,459,286,9.992007221626409e-16
+7,10,"(('enter', ('calculate', 'calculate')), ('enter', ('calculate', 'finish editing')), ('enter', ('finish editing', 'begin editing')), ('enter', ('begin editing', 'calculate')), ('exit', ('calculate', 'finish editing')), ('exit', ('finish editing', 'begin editing')), ('workload', ('begin editing', 'calculate')))",2706,3056,2095,1286,389,269,165,85,1.3322676295501878e-15
+1,27,"(('exit', ('save', 'calculate')),)",1543,1588,1337,969,740,455,483,275,1.4432899320127035e-15
+1,16,"(('exit', ('finish editing', 'decide')),)",200,309,127,69,4331,4065,3603,1841,1.887379141862766e-15
+1,18,"(('enter', ('calculate', 'finish editing')),)",1120,807,925,462,3411,3567,2805,1448,1.787459069646502e-14
+6,13,"(('enter', ('calculate', 'finish editing')), ('enter', ('finish editing', 'begin editing')), ('enter', ('begin editing', 'calculate')), ('exit', ('calculate', 'finish editing')), ('exit', ('finish editing', 'begin editing')), ('workload', ('begin editing', 'calculate')))",4027,3953,3198,1612,0,1,4,14,3.219646771412954e-14
+5,10,"(('enter', ('finish editing', 'begin editing')), ('enter', ('begin editing', 'calculate')), ('exit', ('calculate', 'finish editing')), ('exit', ('finish editing', 'begin editing')), ('workload', ('begin editing', 'calculate')))",4027,3953,3198,1612,0,1,4,14,3.219646771412954e-14
+2,15,"(('enter', ('save', 'save')), ('workload', ('save', 'save')))",429,462,160,249,261,382,267,218,3.9190872769268026e-14
+2,15,"(('exit', ('save', 'save')), ('workload', ('save', 'save')))",429,470,162,256,261,376,265,216,9.303668946358812e-14
+1,17,"(('enter', ('finish editing', 'decide')),)",112,191,59,71,4419,4183,3671,1839,2.183808689437683e-13
+1,24,"(('workload', ('begin editing', 'calculate')),)",4225,4162,3414,1730,306,212,316,180,2.8954616482224083e-13
+1,23,"(('workload', ('save', 'finish editing')),)",504,964,465,228,584,705,585,238,7.706058013923212e-13
+1,30,"(('workload', ('save', 'calculate')),)",766,664,631,556,1517,1379,1189,688,1.3413714583521141e-12
+1,11,"(('handover', ('calculate', 'calculate')),)",173,274,142,52,4352,4085,3588,1851,4.338640557932649e-12
+2,12,"(('enter', ('begin editing', 'insert document')), ('exit', ('insert document', 'save')))",189,133,202,229,427,253,427,220,4.7016834869850754e-12
+1,41,"(('batch', ('save', 'begin editing')),)",302,253,240,379,353,300,188,213,8.667844220155985e-12
+5,14,"(('enter', ('calculate', 'finish editing')), ('enter', ('finish editing', 'begin editing')), ('enter', ('begin editing', 'calculate')), ('exit', ('calculate', 'finish editing')), ('workload', ('finish editing', 'begin editing')))",3978,3925,3176,1606,8,4,9,21,1.0581979736912217e-11
+5,14,"(('enter', ('calculate', 'finish editing')), ('enter', ('finish editing', 'begin editing')), ('enter', ('begin editing', 'calculate')), ('workload', ('calculate', 'finish editing')), ('workload', ('finish editing', 'begin editing')))",3978,3925,3176,1606,8,4,9,21,1.0581979736912217e-11
+1,16,"(('handover', ('finish editing', 'save')),)",129,132,144,49,870,911,711,779,1.7300627597194307e-10
+3,15,"(('enter', ('save', 'save')), ('exit', ('save', 'save')), ('workload', ('save', 'save')))",429,462,160,249,113,203,124,99,2.639032326001711e-10
+1,14,"(('handover', ('save', 'begin editing')),)",336,311,274,411,314,240,154,181,4.706361966810846e-10
+1,23,"(('enter', ('save', 'finish editing')),)",585,1068,553,275,503,601,496,191,1.0144853845872603e-09
+1,29,"(('delay', ('mail valid', 'initialize')),)",312,379,175,149,3145,3163,2653,1307,3.0996868405352984e-09
+1,19,"(('exit', ('calculate', 'save')),)",759,846,725,382,803,678,469,322,5.8226784505066576e-09
+4,10,"(('enter', ('finish editing', 'begin editing')), ('enter', ('begin editing', 'calculate')), ('exit', ('calculate', 'finish editing')), ('workload', ('finish editing', 'begin editing')))",3978,3925,3176,1606,15,10,9,23,1.2134640847705214e-08
+4,10,"(('enter', ('finish editing', 'begin editing')), ('enter', ('begin editing', 'calculate')), ('workload', ('calculate', 'finish editing')), ('workload', ('finish editing', 'begin editing')))",3978,3925,3176,1606,15,10,9,23,1.2134640847705214e-08
+1,10,"(('delay', ('calculate', 'begin editing')),)",239,427,299,124,969,1020,1026,432,2.551059163913294e-08
+3,14,"(('enter', ('calculate', 'finish editing')), ('enter', ('finish editing', 'begin editing')), ('workload', ('begin editing', 'calculate')))",4079,3978,3248,1647,43,53,40,52,3.044136942520481e-08
+1,58,"(('batch', ('mail income', 'mail valid')),)",1747,1681,1552,757,1706,1861,1276,699,9.457839933446621e-08
+3,10,"(('enter', ('calculate', 'finish editing')), ('exit', ('finish editing', 'begin editing')), ('workload', ('begin editing', 'calculate')))",4064,3970,3247,1650,29,54,40,44,1.7976306676548148e-07
+1,22,"(('workload', ('save', 'begin editing')),)",103,101,29,101,547,450,399,491,1.5423668955349967e-06
+1,26,"(('workload', ('finish editing', 'save')),)",251,333,309,271,748,710,546,557,3.5829918457741528e-06
+5,11,"(('enter', ('calculate', 'finish editing')), ('enter', ('finish editing', 'begin editing')), ('exit', ('begin editing', 'calculate')), ('workload', ('calculate', 'finish editing')), ('batch', ('finish editing', 'begin editing')))",3185,3456,2249,1412,31,32,51,31,4.574317181815779e-06
+2,10,"(('enter', ('finish editing', 'begin editing')), ('workload', ('begin editing', 'calculate')))",4079,3979,3248,1647,67,101,72,61,6.669954607207984e-05
+2,10,"(('enter', ('calculate', 'finish editing')), ('workload', ('finish editing', 'begin editing')))",4006,3942,3197,1639,176,126,137,97,0.00013595661425236383
+1,24,"(('exit', ('save', 'begin editing')),)",485,393,332,485,165,158,96,107,0.00023541778623015208
+2,19,"(('enter', ('save', 'save')), ('exit', ('save', 'save')))",461,617,347,296,343,339,207,246,0.00031510901956932624
+1,20,"(('exit', ('save', 'save')),)",501,663,438,312,689,765,495,500,0.0003192900033079926
+7,13,"(('enter', ('calculate', 'calculate')), ('enter', ('calculate', 'calculate')), ('enter', ('calculate', 'finish editing')), ('enter', ('finish editing', 'begin editing')), ('exit', ('begin editing', 'calculate')), ('workload', ('calculate', 'finish editing')), ('workload', ('finish editing', 'begin editing')))",2440,2188,1921,1097,446,374,282,136,0.0005498174596870742
+1,58,"(('batch', ('finish editing', 'begin editing')),)",4137,4064,3311,1711,100,81,92,64,0.0018509472388958947
+1,12,"(('exit', ('begin editing', 'finish editing')),)",430,362,276,147,4101,4012,3454,1763,0.004236759326060602
+1,16,"(('enter', ('begin editing', 'finish editing')),)",439,391,287,147,4092,3983,3443,1763,0.004476989687206112
+1,26,"(('enter', ('save', 'begin editing')),)",447,380,315,451,203,171,113,141,0.009706882472111156
+1,11,"(('enter', ('calculate', 'begin editing')),)",1178,1434,1307,544,30,17,18,13,0.028964715009121567
