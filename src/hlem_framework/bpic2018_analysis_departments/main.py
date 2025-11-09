@@ -1,22 +1,19 @@
 import os.path
 import pickle
 import pm4py
-import pandas as pd
-from collections import Counter
 import sys
 # Add the parent folder (where hlem_with_log.py lives) to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import hlem_with_paths
-from hl_paths import postprocess, significance, case_participation
+from hl_paths import postprocess, case_participation
 import logging
 import preprocessing 
 import results_analysis
-import statistics_csv_experiment
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
 
 TRAFFIC_TYPE = 'High'
-FRAME = 'days'
+FRAME = 'days' 
 SELECTED_F_LIST = ['exit', 'enter', 'handover', 'workload', 'batch', 'delay']
 P = 0.9
 CO_THRESH = 0.5
@@ -26,7 +23,7 @@ FREQ = 10 # initially this was 0
 ONLY_MAXIMAL_PATHS = True
 PATH_FREQUENCY = 10
 ACT_SELECTION = 'all'
-TO_EXCLUDE = ['User_1']
+TO_EXCLUDE = None
 SEG_METHOD = 'df'
 TYPE_BASED = False  # Keep as False - original uses False despite confusing comment
 SEG_PERCENTILE = 0.9
@@ -53,7 +50,6 @@ def load_event_log(xes_path):
         with open(cache_path, 'wb') as f:
             pickle.dump(log, f)
         return log
-
 
 
 def main(log, frame, traffic_type, selected_f_list, p, co_thresh, co_path_thresh, res_info, only_maximal_paths, path_frequency,
@@ -114,29 +110,33 @@ def main(log, frame, traffic_type, selected_f_list, p, co_thresh, co_path_thresh
 
 if __name__ == '__main__':
     current_dir = os.path.abspath(os.curdir)
-    bpi2017_path = os.path.join(current_dir, "event_logs/BPI2017.xes")
+    bpi2018_path = os.path.join(current_dir, "event_logs/BPIC2018.xes")
 
     # Load log
-    log = load_event_log(bpi2017_path)
+    log = load_event_log(bpi2018_path)
     logging.info('The log has ' + str(len(log)) + ' traces.')
 
     no_events = sum([len(trace) for trace in log])
     logging.info('The log has ' + str(no_events) + ' events.')
     
-    # Filter out incomplete cases
-    log = preprocessing.filter_incomplete_cases(log)
-    logging.info('The log has ' + str(no_events) + ' events.')
+    # Filter for 2016 cases only
+    log = preprocessing.filter_cases_by_year(log, 2016)
     
-    # Remove User_1 from the log
+    # Use random sampling to reduce the number of cases and thus the HLEs
+    log = preprocessing.sample_cases(log, sample_fraction=0.30)
+    
+    # Filter out incomplete cases (keep only cases with 'finish payment')
+    log = preprocessing.filter_incomplete_cases(log)
+    logging.info(f'After filtering incomplete cases: {len(log)} traces.')
+    
+    # Get resource selection
     logging.info("Getting resource selection")
     res_selection = preprocessing.get_resources(log, TO_EXCLUDE)
-
-    # Rename workflow activities
-    log = preprocessing.rename_workflow_activities(log)
     
-    successful_cases, unsuccessful_cases = preprocessing.partition_outcome(log)
-
-    class_under_10, class_10_to_30, class_over_30 = preprocessing.partition_on_throughput(log)
+    # Partition by department (4 main departments)
+    logging.info("Partitioning cases by department")
+    dept_4e, dept_e7, dept_6b, dept_d4 = preprocessing.partition_on_departments(log)
+    logging.info(f"Department distribution - 4e: {len(dept_4e)}, e7: {len(dept_e7)}, 6b: {len(dept_6b)}, d4: {len(dept_d4)}")
 
     print("Running main...")
     hle_all_dic, hla_paths_dict = main(log, FRAME, TRAFFIC_TYPE, SELECTED_F_LIST, P, CO_THRESH, CO_PATH_THRESH, 
@@ -150,32 +150,11 @@ if __name__ == '__main__':
     logging.info("Gather statistics on High-Level Attributes")
     df_paths = postprocess.gather_statistics(hle_all_dic, hla_paths_dict, control_flow_dict, P, CO_THRESH)
     
-    # Test correlation between paths and case outcomes (success/failure) using chi-square test
-    logging.info("Produce result table for success rate analysis")
-    results_analysis.results_outcome(df_paths, successful_cases, unsuccessful_cases)
-
-    # Test correlation between paths and case thoughput categories using chi-square test
-    logging.info("Produce result table for thoughput time analysis")
-    results_analysis.throughput_tables(df_paths, [class_under_10, class_10_to_30, class_over_30])
-
-    logging.info("Produce result tables for HLE of interest - Success and Failure")
-    statistics_csv_experiment.print_outcome_tables(
-    csv_path="results/outcome_results.csv",
-    queries=[
-        "(('exit', ('A_Complete', 'W_Call after offers|suspend')), ('enter', ('W_Call after offers|suspend', 'W_Call after offers|resume')))",
-        "(('batch', ('W_Validate application|suspend', 'W_Validate application|resume')), ('workload', ('W_Validate application|resume', 'W_Validate application|suspend')))",
-        "(('handover', ('W_Call incomplete files|suspend', 'W_Call incomplete files|resume')), ('workload', ('W_Call incomplete files|resume', 'W_Call incomplete files|suspend')))",
-        "(('delay', ('W_Validate application|suspend', 'W_Validate application|resume')),)"
-    ],
-    case_sensitive=False)
-
-    logging.info("Produce result tables for HLE of interest - Throughput")
-    statistics_csv_experiment.print_throughput_tables(
-        csv_path="results/throughput-3-classes.csv",
-        queries=[
-            "(('exit', ('A_Complete', 'W_Call after offers|suspend')), ('batch', ('W_Call after offers|suspend', 'W_Call after offers|resume')))",
-            "(('workload', ('W_Call after offers|schedule', 'W_Call after offers|start')), ('workload', ('W_Call after offers|start', 'A_Complete')), ('workload', ('A_Complete', 'W_Call after offers|suspend')))",
-            "(('exit', ('A_Validating', 'O_Returned')), ('workload', ('O_Returned', 'W_Validate application|suspend')))"
-        ],
-        case_sensitive=False
-    )
+    # Analyze paths by department correlation
+    logging.info("Produce result tables for department analysis")
+    dept_results = results_analysis.department_tables(df_paths, [dept_4e, dept_e7, dept_6b, dept_d4])
+    
+    logging.info("Department Analysis Summary:")
+    for dept_name, dept_df in dept_results.items():
+        logging.info(f"Department {dept_name}: {len(dept_df)} significant paths")
+    
